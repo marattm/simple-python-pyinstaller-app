@@ -11,7 +11,7 @@ pipeline {
                 sh 'python -m py_compile sources/add2vals.py sources/calc.py' // Runs the Python command to compile your application.
             }
         }
-        stage('Test') {
+        stage('Test') { // Define the stage.
             agent {
                 docker {
                     image 'qnib/pytest'
