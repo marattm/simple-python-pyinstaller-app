@@ -1,14 +1,14 @@
 pipeline {
     agent none
     stages {
-        stage('Build') {
+        stage('Build') { // Define the stage.
             agent {
                 docker {
-                    image 'python:2-alpine'
+                    image 'python:2-alpine' // The Python container becomes the agent that Jenkins uses to run the Build stage of your Pipeline project.
                 }
             }
             steps {
-                sh 'python -m py_compile sources/add2vals.py sources/calc.py'
+                sh 'python -m py_compile sources/add2vals.py sources/calc.py' // Runs the Python command to compile your application.
             }
         }
         stage('Test') {
