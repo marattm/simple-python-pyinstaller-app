@@ -3,7 +3,7 @@
 # '''
 # Script for launching Jenkins on docker. 
 # '''
-docker run \
+sudo docker run \
   --rm \
   -u root \
   -p 8080:8080 \
@@ -18,3 +18,9 @@ docker run \
 # Script for accessing Jenkins on docker, and having a prompt command window. 
 # '''
 # docker exec -it jenkins-tutorials bash
+# sudo docker exec <container_id> apt-get update
+# sudo docker exec <container_id> apt-get install ant -y
+
+# Connect to github via ssh:
+
+ssh -vT git@github.com:marattm/simple-python-pyinstaller-app.git
