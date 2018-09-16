@@ -23,4 +23,5 @@ sudo docker run \
 
 # Connect to github via ssh:
 
-ssh -vT git@github.com:marattm/simple-python-pyinstaller-app.git
+# ssh -vT git@github.com:marattm/simple-python-pyinstaller-app.git
+# ssh git@github.com
